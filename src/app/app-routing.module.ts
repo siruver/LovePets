@@ -6,7 +6,12 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
-  
+
+  {
+    path: 'registrousuario',
+    loadChildren: () => import('./registrousuario/registrousuario.module').then( m => m.RegistrousuarioPageModule)
+  },
+
 ];
 
 @NgModule({

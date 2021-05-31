@@ -8,13 +8,13 @@ import { NavController } from '@ionic/angular';
 })
 export class RegistrousuarioPage implements OnInit {
 
-  constructor(private navCtrl:NavController) { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
   }
 
-  
   voltapaginalogin(){
-    this.navCtrl.navigateBack('tabs/login');
+    this.navCtrl.navigateBack('tabs/login')
   }
+
 }

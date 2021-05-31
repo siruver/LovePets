@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color='primary'>
+    <ion-title>Inscrição do usuário:</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="backgroundpataregistro">
+
+    <div class="logo-registro" >
+      <img  src="https://cdn.discordapp.com/attachments/744059850828415089/833463984358817812/logocoracaovermelho.png">
+    </div>
+    
+    
+    <form class="Inscricao-usuario">
+      <ion-label>Nome Completo: </ion-label>
+      <input type="text" id="nomecompleto" class="input-nome" placeholder="Nome Completo">
+      <ion-label>Senha: </ion-label>
+      <input type="password" class="input-password" placeholder="senha">
+      <ion-label>Confirmar senha: </ion-label>
+      <input type="password" class="input-confirmar-password" placeholder="confirmar senha"> 
+      <ion-label>E-mail: </ion-label>
+      <input type="email" class="input-password" placeholder="E-mail">
+    
+    
+      <ion-button color="light" class="botao-registrar" expand="block">Registrar</ion-button>
+      <ion-button color="light" class="botao-japossuoumaconta" expand="block" (click)="voltapaginalogin()">Já possuo uma conta</ion-button>
+    
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <ion-content class="ion-padding ion-text-center">
+
+    <div class="background-container">
+      <div class="textologo">
+        <img src="https://cdn.discordapp.com/attachments/744059850828415089/843254409723117578/LovePetstexto.png">
+      </div>
+      <div class="logo">
+        <img src="https://cdn.discordapp.com/attachments/744059850828415089/833463984358817812/logocoracaovermelho.png">
+      </div>
+    
+      <div class="form">
+    
+        <ion-item color="dark" lines="none">
+          <ion-input [(ngModel)]="email" placeholder='Email/usuário'></ion-input>
+        </ion-item>
+    
+        <ion-item color="dark" lines="none">
+          <ion-input [(ngModel)]="password" placeholder='Password' type="password"></ion-input>
+        </ion-item>
+    
+        <ion-button color="light" expand="block" (click)="mostrapaginapost()">Login</ion-button>
+      
+      </div>
+      <ion-button fill="clear" (click)="mostraformularioinscricao()">Novo? inscreva-se aqui</ion-button>
+      <ion-button fill="clear">Sou uma empresa</ion-button>
+
+    
+          
+    </div>
+  
+  
+</ion-content>

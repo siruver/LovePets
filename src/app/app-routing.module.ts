@@ -11,6 +11,14 @@ const routes: Routes = [
     path: 'registrousuario',
     loadChildren: () => import('./registrousuario/registrousuario.module').then( m => m.RegistrousuarioPageModule)
   },
+  {
+    path: 'registroempresa',
+    loadChildren: () => import('./registroempresa/registroempresa.module').then( m => m.RegistroempresaPageModule)
+  },
+  {
+    path: 'esquecisenha',
+    loadChildren: () => import('./esquecisenha/esquecisenha.module').then( m => m.EsquecisenhaPageModule)
+  },
 
 ];
 

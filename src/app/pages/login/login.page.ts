@@ -21,4 +21,13 @@ export class LoginPage implements OnInit {
     this.navCtrl.navigateForward('tabs/home2')
   }
 
+  mostraformularioempresa(){
+    this.navCtrl.navigateForward('registroempresa')
+  }
+
+  mostraformularioesquecisenha(){
+    this.navCtrl.navigateForward('esquecisenha')
+  }
+
+
 }

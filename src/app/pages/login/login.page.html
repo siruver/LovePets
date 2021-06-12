@@ -12,27 +12,27 @@
       <div class="logo">
         <img src="https://cdn.discordapp.com/attachments/744059850828415089/833463984358817812/logocoracaovermelho.png">
       </div>
-    
+
       <div class="form">
-    
-        <ion-item color="dark" lines="none">
+
+        <ion-item lines="none">
           <ion-input [(ngModel)]="email" placeholder='Email/usuário'></ion-input>
         </ion-item>
-    
-        <ion-item color="dark" lines="none">
-          <ion-input [(ngModel)]="password" placeholder='Password' type="password"></ion-input>
+<!-- eu tirei o "color dark" dos 2, se der problema é so colocar no ion-item dnv -->
+        <ion-item lines="none">
+          <ion-input [(ngModel)]="senha" placeholder='Password' type="password"></ion-input>
         </ion-item>
-    
-        <ion-button color="light" expand="block" (click)="mostrapaginapost()">Login</ion-button>
-      
+
+        <ion-button color="light" expand="block" (click)="login()">Login</ion-button>
+
       </div>
       <ion-button fill="clear" (click)="mostraformularioinscricao()">Novo? inscreva-se aqui</ion-button>
       <ion-button fill="clear" (click)="mostraformularioempresa()">Sou uma empresa</ion-button>
       <ion-button fill="clear" (click)="mostraformularioesquecisenha()">Esqueci minha senha</ion-button>
 
-    
-          
+
+
     </div>
-  
-  
+
+
 </ion-content>

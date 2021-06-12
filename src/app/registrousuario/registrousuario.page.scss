@@ -4,7 +4,7 @@
 }
 
 ion-label{
-    text-align: center;
+
     color: black;
     margin: 5px;
     width: 100%;
@@ -16,7 +16,9 @@ ion-content{
 
 
 }
-
+ion-list{
+  --ion-background-color: transparent;
+}
 .backgroundpataregistro{
     height: 100%;
     width: 100%;
@@ -29,8 +31,8 @@ ion-content{
     text-align: center;
     margin-top: 5em;
     transition: 1s all;
-    
-    
+
+
 }
 
 .botao-japossuoumaconta{

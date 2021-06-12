@@ -1,8 +1,8 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar color='primary'>
     <ion-title>Inscrição do usuário:</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content>
   <div class="backgroundpataregistro">
@@ -10,22 +10,49 @@
     <div class="logo-registro" >
       <img  src="https://cdn.discordapp.com/attachments/744059850828415089/833463984358817812/logocoracaovermelho.png">
     </div>
-    
-    
-    <form class="Inscricao-usuario">
-      <ion-label>Nome Completo: </ion-label>
-      <input type="text" id="nomecompleto" class="input-nome" placeholder="Nome Completo">
-      <ion-label>Senha: </ion-label>
-      <input type="password" class="input-password" placeholder="senha">
-      <ion-label>Confirmar senha: </ion-label>
-      <input type="password" class="input-confirmar-password" placeholder="confirmar senha"> 
-      <ion-label>E-mail: </ion-label>
-      <input type="email" class="input-password" placeholder="E-mail">
-    
-    
-      <ion-button color="light" class="botao-registrar" expand="block">Registrar</ion-button>
-      <ion-button color="light" class="botao-japossuoumaconta" expand="block" (click)="voltapaginalogin()">Já possuo uma conta</ion-button>
-    
-    </form>
-  </div>
-</ion-content>
+
+    <ion-list>
+      <ion-item>
+        <ion-label position='floating'>Nome Completo: </ion-label>
+        <ion-input [(ngModel)]="nome" type='text' ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position='floating'>Senha: </ion-label>
+        <ion-input [(ngModel)]="senha"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position='floating' >Confirmar senha: </ion-label>
+        <ion-input [(ngModel)]="confirmar" (ionChange)="checkPassword()"></ion-input>
+        <ion-text *ngIf="senha && !senhaCerta" color="danger" >As senhas não combinam</ion-text>
+        <ion-text *ngIf="senha && senhaCerta" color="success">As senhas combinam</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-label position='floating'>E-mail: </ion-label>
+        <ion-input [(ngModel)]="email" type='email'></ion-input>
+      </ion-item>
+    </ion-list>
+    <!-- <ion-list>
+      <ion-item>
+        <ion-label position='floating'>Nome Completo: </ion-label>
+        <ion-input [(ngModel)]="nome" type='text'></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position='floating'>Senha: </ion-label>
+        <ion-input [(ngModel)]="senha"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position='floating' >Confirmar senha: </ion-label>
+        <ion-input [(ngModel)]="confirmar"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position='floating'>E-mail: </ion-label>
+        <ion-input [(ngModel)]="email" type='email'></ion-input>
+      </ion-item>
+    </ion-list> -->
+
+
+    <ion-button [disabled]='!senhaCerta' (click)='register()' color="light" class="botao-registrar" expand="block">Registrar</ion-button>
+    <ion-button color="light" class="botao-japossuoumaconta" expand="block" (click)="voltapaginalogin()">Já possuo uma conta</ion-button>
+
+   </div>
+  </ion-content>

@@ -2,7 +2,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+<<<<<<< HEAD
     
+=======
+>>>>>>> 76ebb2d20b6f23848f85062bc1557a2720472d9c
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

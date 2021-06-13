@@ -36,7 +36,11 @@
     "@angular-eslint/eslint-plugin": "~12.0.0",
     "@angular-eslint/eslint-plugin-template": "~12.0.0",
     "@angular-eslint/template-parser": "~12.0.0",
+<<<<<<< HEAD
     "@angular/cli": "12.0.4",
+=======
+    "@angular/cli": "~12.0.1",
+>>>>>>> 76ebb2d20b6f23848f85062bc1557a2720472d9c
     "@angular/compiler": "~12.0.1",
     "@angular/compiler-cli": "~12.0.1",
     "@angular/language-service": "~12.0.1",

@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+<<<<<<< HEAD
 import { CadastrarProdutosComponent } from './components/produtos/cadastrar-produtos/cadastrar-produtos.component';
 import { ListarProdutosComponent } from './components/produtos/listar-produtos/listar-produtos.component';
+=======
+>>>>>>> 76ebb2d20b6f23848f85062bc1557a2720472d9c
 
 const routes: Routes = [
   {
@@ -21,6 +24,7 @@ const routes: Routes = [
     path: 'esquecisenha',
     loadChildren: () => import('./esquecisenha/esquecisenha.module').then( m => m.EsquecisenhaPageModule)
   },
+<<<<<<< HEAD
   {
     path: 'listar-produtos',
     loadChildren: () => import('./listar-produtos/listar-produtos.module').then( m => m.ListarProdutosPageModule)
@@ -34,6 +38,8 @@ const routes: Routes = [
     loadChildren: () => import('./atualizar-produto/atualizar-produto.module').then( m => m.AtualizarProdutoPageModule)
   },
 
+=======
+>>>>>>> 76ebb2d20b6f23848f85062bc1557a2720472d9c
 
 ];
 

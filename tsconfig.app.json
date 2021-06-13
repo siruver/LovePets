@@ -2,8 +2,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+<<<<<<< HEAD
     
 
+=======
+>>>>>>> 76ebb2d20b6f23848f85062bc1557a2720472d9c
     "outDir": "./out-tsc/app",
     "types": []
   },
@@ -14,5 +17,8 @@
   "include": [
     "src/**/*.d.ts"
   ]
+<<<<<<< HEAD
   
+=======
+>>>>>>> 76ebb2d20b6f23848f85062bc1557a2720472d9c
 }

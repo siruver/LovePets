@@ -17,8 +17,11 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AuthService } from './services/auth.service';
 import {AuthGuard} from './guard/auth.guard';
 
+<<<<<<< HEAD
 import {HttpClientModule} from '@angular/common/http';
 
+=======
+>>>>>>> 76ebb2d20b6f23848f85062bc1557a2720472d9c
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -29,8 +32,12 @@ import {HttpClientModule} from '@angular/common/http';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
+<<<<<<< HEAD
     AngularFirestoreModule,
     HttpClientModule
+=======
+    AngularFirestoreModule
+>>>>>>> 76ebb2d20b6f23848f85062bc1557a2720472d9c
   ],
   providers: [
     AuthService,

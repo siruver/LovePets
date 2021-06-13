@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color='primary'>
+    <ion-title>Cadastro da empresa:</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="backgroundpataregistro">
+
+    <div class="logo-registro" >
+      <img  src="https://cdn.discordapp.com/attachments/744059850828415089/833463984358817812/logocoracaovermelho.png">
+    </div>
+    
+    
+    <form class="Inscricao-empresa">
+      <ion-label>Nome Empresa: </ion-label>
+      <input type="text" id="nomecompleto" class="input-nome" placeholder="Nome Empresa">
+      <ion-label>CNPJ: </ion-label>
+      <input type="text" class="input-cnpj" placeholder="00.000.000/0001-00">
+      <ion-label>Endereço: </ion-label>
+      <input type="text" class="inputendereço" placeholder="Endereço"> 
+      
+    
+    
+      <ion-button color="light" class="botao-registrar" expand="block">Registrar</ion-button>
+      <ion-button color="light" class="botao-japossuoumaconta" expand="block" (click)="voltapaginalogin()">Já possuo uma conta</ion-button>
+    
+    </form>
+  </div>
+</ion-content>

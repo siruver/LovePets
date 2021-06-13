@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-title>Listar Produtos</ion-title>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let prod of listaProdutos">
+    <ion-list-header>{{prod.mome}}</ion-list-header>
+    <ion-item>{{prod.preco}}</ion-item>
+    <ion-item>{{prod.validade}}</ion-item>
+    <ion-item>{{prod.id}}</ion-item>
+  </ion-list>
+</ion-content>

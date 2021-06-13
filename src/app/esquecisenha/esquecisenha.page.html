@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color='primary'>
+    <ion-title>Recuperação de senha</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="backgroundpataregistro">
+
+    <div class="logo-registro" >
+      <img  src="https://cdn.discordapp.com/attachments/744059850828415089/833463984358817812/logocoracaovermelho.png">
+    </div>
+    
+    
+    <form class="recuperacao-senha">
+
+      <ion-label>Senha: </ion-label>
+      <input type="password" class="input-password" placeholder="senha">
+      <ion-label>Confirmar senha: </ion-label>
+      <input type="password" class="input-confirmar-password" placeholder="confirmar senha"> 
+      <ion-label>E-mail: </ion-label>
+      <input type="email" class="input-password" placeholder="E-mail">
+    
+    
+      <ion-button color="light" class="botao-registrar" expand="block">enviar</ion-button>
+      <ion-button color="light" class="botao-japossuoumaconta" expand="block" (click)="voltapaginalogin()">voltar</ion-button>
+    
+    </form>
+  </div>
+</ion-content>

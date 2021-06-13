@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listar-produtos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-button (click)="goCadastrarProduto()">Cadastrar produto</ion-button>
+  <ion-button (click)="goback()">Voltar</ion-button>
+  <ion-list *ngFor="let prod of listaProdutos">
+    <ion-list-header>Nome do Produto: {{prod.nome}} <ion-button routerLink="atualizar-produto/{{prod.id}}" >Atualizar</ion-button></ion-list-header>
+    <ion-item>Preço: {{prod.preco}}R$</ion-item>
+    <ion-item>Validade: {{prod.validade}}</ion-item>
+    <ion-item>Id: {{prod.id}}</ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,46 @@
+.Inscricao-usuario{
+    margin: 50px;
+    text-align: center;
+}
+
+ion-label{
+
+    color: black;
+    margin: 5px;
+    width: 100%;
+    display: block;
+}
+
+ion-content{
+    --ion-background-color: white;
+
+
+}
+ion-list{
+  --ion-background-color: transparent;
+}
+.backgroundpataregistro{
+    height: 100%;
+    width: 100%;
+    background: url('https://cdn.discordapp.com/attachments/744059850828415089/833510622339268648/ultimatentativapata2-azul.png');
+
+}
+
+//botões
+.botao-registrar{
+    text-align: center;
+    margin-top: 5em;
+    transition: 1s all;
+
+
+}
+
+.botao-japossuoumaconta{
+    margin-top: 2em;
+}
+
+
+.logo-registro{
+    padding-top: 3em;
+    text-align: center;
+}

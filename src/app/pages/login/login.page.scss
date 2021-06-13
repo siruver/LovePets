@@ -1,0 +1,45 @@
+
+.logo{
+    margin-top: 0px;
+    text-align: center;
+    img{
+    height: 200PX;
+    }
+  }
+  
+  
+  .form{
+    color: grey;
+    margin-top: 100px;
+    ion-item{
+      border-radius: 5px;
+      border-color: grey;
+      border-width: 2px;
+      border-style: solid;
+      margin-bottom: 10px;
+    }
+  }
+  
+  ion-button{
+    text-transform: none;
+  }
+  
+  ion-content{
+    --ion-background-color: #fff;
+  }
+  
+  .background-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: url('https://cdn.discordapp.com/attachments/744059850828415089/833510622339268648/ultimatentativapata2-azul.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .botaologin{
+    background: orange;
+  }
